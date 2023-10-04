@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        display: flex;
+    }
+    select{
+        margin-right: 20px;
+    }
+</style>
+<body>
+<form>
+    <label for="city">City:</label>
+    <select id="city" onclick="Dropdown('city', 'department', cities)">
+        <option value="city1">Taraz</option>
+        <option value="city2">Almaty</option>
+        <option value="city3">Karaganda</option>
+    </select>
+
+    <label for="department">Цех:</label>
+    <select id="department" onclick="Dropdown('department', 'employee', departments)"></select>
+
+    <label for="employee">Сотрудник:</label>
+    <select id="employee"></select>
+
+    <label for="team">Бригада:</label>
+    <select id="team">
+        <option value="team1">Бригада 1</option>
+        <option value="team2">Бригада 2</option>
+    </select>
+
+    <label for="change">Смена:</label>
+    <select id="change">
+        <option value="change1">Смена 1</option>
+        <option value="change2">Смена 2</option>
+    </select>
+
+    <button type="button" id="saveBtn" onclick="saveData()">Save</button>
+</form>
+    <script src="script.js"></script>
+</body>
+
+</html>
